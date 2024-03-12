@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="music-player" id="player1">
+    <audio src="caminho_da_faixa1.mp3" id="audio1"></audio>
+    <button onclick="togglePlayPause('audio1')">Play/Pause</button>
+    <button onclick="toggleMute('audio1')">Mute/Unmute</button>
+</div>
+<div class="music-player" id="player1">
+    <audio src="caminho_da_faixa1.mp3" id="audio1"></audio>
+    <button onclick="togglePlayPause('audio1')">Play/Pause</button>
+    <button onclick="toggleMute('audio1')">Mute/Unmute</button>
+</div>
+<!-- Repita a estrutura acima para os outros players (player2, player3, etc.) -->
+
+<button onclick="playAll()">Play All</button>
+
+<script src="scripts.js"></script>
+</body>
+</html>
