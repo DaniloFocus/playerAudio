@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wavesurfer.min.css">
+    
+    <script src="script.js" defer></script>
+    
+    <script src="wavesurfer.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" defer></script>
+    <script src="scriptVizualizer.js" defer></script>
 </head>
 <body>
+    <div class="music-player" id="player1">
+        <audio src="./tracks/bassSintese.mp3" id="audio1"></audio>
+        <button onclick="togglePlayPause('audio1')">Play/Pause</button>
+        <button onclick="toggleMute('audio1')">Mute/Unmute</button>
+        <div id="waveform"></div>
+      </div>
     
-  <div class="music-player" id="player1">
-    <audio src="caminho_da_faixa1.mp3" id="audio1"></audio>
-    <button onclick="togglePlayPause('audio1')">Play/Pause</button>
-    <button onclick="toggleMute('audio1')">Mute/Unmute</button>
-</div>
-<div class="music-player" id="player1">
-    <audio src="caminho_da_faixa1.mp3" id="audio1"></audio>
-    <button onclick="togglePlayPause('audio1')">Play/Pause</button>
-    <button onclick="toggleMute('audio1')">Mute/Unmute</button>
-</div>
+      <div class="music-player" id="player2">
+        <audio src="./tracks/drumsSintese.mp3" id="audio2"></audio>
+        <button onclick="togglePlayPause('audio2')">Play/Pause</button>
+        <button onclick="toggleMute('audio2')">Mute/Unmute</button>
+        <div id="waveform2"></div>
+      </div>
+    
+      <div class="music-player" id="player3">
+        <audio src="./tracks/outroSintese.mp3" id="audio3"></audio>
+        <button onclick="togglePlayPause('audio3')">Play/Pause</button>
+        <button onclick="toggleMute('audio3')">Mute/Unmute</button>
+        <div id="waveform3"></div>
+      </div>
+    
+      <div class="music-player" id="player4">
+        <audio src="./tracks/vocalsSintese.mp3" id="audio4"></audio>
+        <button onclick="togglePlayPause('audio4')">Play/Pause</button>
+        <button onclick="toggleMute('audio4')">Mute/Unmute</button>
+        <div id="waveform4"></div>
+      </div>
 <!-- Repita a estrutura acima para os outros players (player2, player3, etc.) -->
 
 <button onclick="playAll()">Play All</button>
 
-<script src="scripts.js"></script>
 </body>
 </html>
